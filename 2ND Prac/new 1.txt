@@ -1,0 +1,6 @@
+<td><img src = "https://shopfront.takealot.com/4116ed446b2fc7cf96ecafd139acb5d164ea4ccc/static/media/src/images/app-store.svg-edce310696aa7f6191a1.svg" width ="150" height="100"></td>
+
+ <td><img src = "https://shopfront.takealot.com/4116ed446b2fc7cf96ecafd139acb5d164ea4ccc/static/media/src/images/google-play.svg-7a92427373a19e40a662.svg" width ="150" height="100"></td>
+ 
+ <td><img src = "https://shopfront.takealot.com/4116ed446b2fc7cf96ecafd139acb5d164ea4ccc/static/media/src/images/huawei-appgallery.svg-bb1c8aaa1305360a018d.svg" width ="150" height="100"></td>
+  <th>Download Our Apps</th>
