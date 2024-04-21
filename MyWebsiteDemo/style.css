@@ -1,0 +1,333 @@
+
+
+
+
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 20px 100px;
+   
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    z-index: 99;
+   
+}
+.Homepage-Background
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Background3.JPEG')no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.LoginBackground
+{
+background: url('Background3.JPEG')no-repeat;
+background-size:cover;
+background-position: center;
+}
+.Register-background
+{
+    background: url('Background3.JPEG')no-repeat;
+background-size:cover;
+background-position: center;
+}
+.logo
+{
+    font-size: 2em;
+    color: #fff; 
+    user-select: none;
+    margin-left: 1px;
+
+}
+
+.navigation a
+{
+    position: relative;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    text-align: right;
+    align-content: top;
+    justify-content: space-between;
+    margin-right: 20px;
+    
+   
+ 
+    
+}
+
+.navigation a::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    /*to scale an element along the x-axis
+    when set to zero make the element to have zero width along the x-axis
+    making it invincible*/
+    transform: scaleX(0);
+
+    /*amount of time it should take to transform */
+    transition: transform 0.5s;
+    /*Makes the trnsformation to start from the right */
+    transform-origin: right;
+
+
+}
+.navigation a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin:left;
+}
+
+ .btnLoginPopup
+{
+width: 130px;
+height: 50px;
+background: transparent;
+border: 1px solid;
+outline: none;
+cursor: pointer;
+font-size: 1.1em;
+color: #fff;
+font-weight: 500;
+cursor: pointer;
+border-radius: 25px;
+margin-left: 40px;
+margin-right:100px;
+
+;
+
+
+}
+
+
+.btnLoginPopup:hover
+{
+    background-color: white;
+    color: black;
+}
+.btnLoginPopup:active
+{
+    background-color: lightblue;
+    opacity: 0,5s;
+}
+ .HomePageImage
+{
+background-size:cover;
+background-position: center;
+
+}
+.Profile
+{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+
+
+}
+.Profile img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.Profile span
+{
+    font-size:13px ;
+    font-weight: 500;
+
+}
+.wrapper
+{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgb(255,255,255, .5);
+    border-radius: 20px;
+    backdrop-filter:blur(20px) ;
+    box-shadow: 0 0 30px rgb(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 450px;
+    margin-top: 100px;
+    overflow: hidden;
+    transition: height 0.2s ease;
+
+}
+
+.wrapper.Login-Button:active{
+
+    height: 520px;
+}
+.wrapper .form-box.Register-background{
+    position: absolute;
+    transform: translate(400px);
+
+}
+
+.wrapper .form-box.login-register{
+    transition: none;
+    transform: translate(-400px);
+}
+.Login-Button
+{
+    width: 180px;
+    height: 30px;
+    margin-left: 17px;
+    border-radius: 15px ;
+    color: #fff;
+    background-color: green;
+    margin-top: 10px;
+    border: none;
+}
+.Login-Button:hover
+{
+    background-color:rgb(0, 128, 105) ;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+    box-shadow: 5px 5px 10px rgb(0,0 , 0,0.15);
+}
+.Login-Button:active
+{
+   background-color: rgb(0, 128, 62);
+   transition: opacity 0.15s;
+}
+.wrapper form-box
+{
+   width: 100%;
+   padding: 40px;
+}
+.wrapper h2
+{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.input-box
+{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin: 30px 0;
+    border-bottom: 2px solid #162938;
+
+}
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: -5px;
+
+}
+
+.input-box label
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    padding: 0 5px 0 5px ;
+
+    
+
+}
+.input-box .icon
+{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #162938;
+  line-height: 57px;
+
+}
+.remember-forgot
+{
+    justify-content: space-between;
+}
+.remember-forgot label
+{
+    color: #162938;
+}
+.remember-forgot a{
+    color: blue;
+    text-decoration: none;
+
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.login-register p{
+    color: #162938;
+
+}
+.login-register a
+{
+    text-decoration: none;
+}
+.login-register a:hover
+{
+    text-decoration: underline;
+}
+.login-register
+{
+    margin:25px 0 10px;
+
+}
+.wrapper .icon-close
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-bottom-left-radius:20px ;
+   cursor: pointer;
+   z-index: 1;
+
+}
+.wrapper .form-box.login-register{
+    position: absolute;
+    transform: translate(400px);
+}
+
